@@ -1,0 +1,1136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.header1{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Images/Main.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.header2{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Images/Main.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.header3{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Images/DWC.jpg);
+    box-shadow: 1px 1px #F5EED0;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.header4{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Images/leopard\ main3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.header5{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Images/Main.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.nav-sec{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-sec img{
+    width: 150px;
+}
+
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navlinks ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navlinks ul li::after{
+    content: '';
+    width: 0%;  
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+
+.nav-sec .bx{
+    display:none
+
+}
+
+@media(max-width: 700px){
+    .nav-sec{
+        overflow-x: hidden;
+    }
+    .nav-sec img{
+        width: 50px;
+    }
+    
+    .textbox h1{
+        font-size: 20px;
+    }
+
+    .navlinks ul li{
+        display: block;
+    }
+
+    .navlinks{
+        position: absolute;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.7s;
+    }
+
+    .nav-sec .bx{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+}
+
+@media(min-width: 701px) and (max-width: 1024px){
+    .nav-sec{
+        overflow-x: hidden;
+    }
+    .nav-sec img{
+        width: 100px;
+    }
+    
+    .textbox h1{
+        font-size: 40px;
+    }
+
+    .navlinks ul li{
+        display: block;
+    }
+
+    .navlinks{
+        position: absolute;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.7s;
+    }
+
+    .nav-sec .bx{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+}
+
+footer{
+    background-color: #111;
+}
+
+.footcon{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.social a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.social a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footnav{
+    margin: 30px 0;
+}
+
+.footnav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footnav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footnav ul li a:hover{
+    opacity: 1;
+}
+
+.footbot{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footbot p{
+    color: white;
+}
+
+.design{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media(max-width: 700px){
+    .footnav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footnav ul li a{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+body{
+    /* height: 100vh;
+    width: 100vw; */
+    /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Images/background1.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden; */
+    
+}
+
+/* Home page */
+
+.importantrow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.important{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.importantcol{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.importantcol img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 6px #bfbfbf;
+}
+
+.importantcol p{
+    padding: 0;
+
+}
+
+.importantcol h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+@media(max-width: 700px){
+    .importantrow{
+        flex-direction: column;
+    }
+}
+
+.mostvisit{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    /* padding-top: 10px; */
+    padding-bottom: 50px;
+}
+
+.mostvisit h1{
+    padding-bottom: 30px;
+}
+
+.mvrow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mvcol{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 10px 10px 6px #bfbfbf;
+}
+
+.mvcol img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    display: block;
+}
+
+.mvlayer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.mvlayer:hover{
+    backdrop-filter: blur(10px);;
+}
+
+.mvlayer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mvlayer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+@media(max-width: 700px){
+    .mvrow{
+        flex-direction: column;
+    }
+}
+
+/* Introduction to wild life page */
+
+.secondwrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #fff; */
+    padding-top: 0px;
+}
+
+.secondwrapper{
+    margin: 25px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.secondwrapper iframe{
+    height: 30vh;
+    width: 30vw;
+    object-fit: cover;
+    float: right;
+    border-radius: 10px;
+    margin-left: 15px;
+    box-shadow: 10px 10px 6px #bfbfbf
+}
+
+.secondwrap .secondwrapper .secondtextbox1{
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
+
+.secondtextbox1 h3{
+    font-size: 30px;
+}
+
+@media(max-width: 700px){
+    .secondwrapper{
+        align-items: center;
+    }
+
+    .secondwrapper iframe{
+        float: none;
+        width: 100%;
+        height: 300px;
+        margin-left: 0px;
+    }
+
+    .secondwrap .secondwrapper .secondtextbox1{
+        display: block;
+        height: 100%;
+    }
+
+    .secondtextbox1{
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .heading{
+        width: 90%;
+    }
+}
+
+.placeimgrow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.placeimg{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.placeimgcol{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.placeimgcol img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 6px #bfbfbf;
+}
+
+.placeimgcol p{
+    padding: 0;
+
+}
+
+.placeimgcol h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+@media(max-width: 700px){
+    .placeimgrow{
+        flex-direction: column;
+    }
+}
+
+
+/* Department of wildlife conservation page */
+
+.thirdwrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #fff; */
+    padding-top: 0px;
+}
+
+.thirdwrapper{
+    margin: 25px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.thirdwrapper iframe{
+    height: 40vh;
+    width: 30vw;
+    object-fit: cover;
+    float: right;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.thirdwrap .thirdwrapper .thirdtextbox1{
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
+
+.thirdtextbox1 h3{
+    font-size: 30px;
+}
+
+@media(max-width: 700px){
+    .thirdwrapper iframe{
+        float: none;
+        width: 100%;
+        height: 300px;
+        margin-left: 0px;
+    }
+
+    .thirdwrap .thirdwrapper .thirdtextbox1{
+        display: block;
+        height: 100%;
+    }
+
+    .thirdtextbox1{
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .heading{
+        width: 90%;
+    }
+}
+
+.imggal{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.imgrow{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imggal h1{
+    padding-bottom: 20px;
+}
+
+.imgcol{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 10px 10px 6px #bfbfbf;
+}
+
+.imgcol img{
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imglayer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.imglayer:hover{
+    backdrop-filter: blur(10px);
+}
+
+.imglayer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 1;
+    transition: 0.5s;
+    bottom: 49%;
+}
+
+/* .imglayer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+} */
+
+.imglayer p{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.imglayer:hover p{
+    top: 49%;
+    opacity: 1;
+}
+
+@media(max-width: 700px){
+    .imgrow{
+        flex-direction: column;
+    }
+
+    .imglayer p{
+        width: 100%;
+        font-weight: 500;
+        color: #fff;
+        font-size: 26px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    
+    .imglayer:hover p{
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+/* Sri Lankan Leopard page */
+.fol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow{
+    list-style-type: disc;
+    width: 79vw;
+    text-align: left;
+    padding-top: 50px;
+}
+
+.fourthwrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #fff; */
+    padding-top: 0px;
+    column-gap: 30px;
+}
+
+.fourthwrapper{
+    margin: 25px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.fourthwrapper img{
+    height: 40vh;
+    width: 30vw;
+    object-fit: cover;
+    float: left;
+    border-radius: 10px;
+    margin-right: 15px;
+    box-shadow: 10px 10px 6px #bfbfbf;
+}
+
+.fourthwrap .fourthwrapper .fourthtextbox1{
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourthtextbox1 h3{
+    font-size: 30px;
+}
+
+@media(max-width: 700px){
+    .fourthwrapper{
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .fourthwrapper img{
+        float: none;
+        max-width: 100%;
+        width: 100%;
+        height: 300px;
+        margin-left: 0px;
+    }
+
+    .fourthwrap .fourthwrapper .fourthtextbox1{
+        display: block;
+        height: 100%;
+    }
+
+    .fourthtextbox1{
+        padding-top: 0px;
+        text-align: center;
+    }
+}
+
+.fourthwrap2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #fff; */
+    padding-top: 0px;
+}
+
+.fourthwrapper2{
+    margin: 25px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.fourthwrapper2 img{
+    height: 40vh;
+    width: 30vw;
+    object-fit: cover;
+    float: right;
+    border-radius: 10px;
+    margin-left: 15px;
+    box-shadow: 10px 10px 6px #bfbfbf;
+}
+
+.fourthwrap2 .fourthwrapper2 .fourthtextbox2{
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourthwrap2 .fourthwrapper2 .fourthtextbox2 h3{
+    display: flex;
+    height: 7vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fourthtextbox2 h3{
+    font-size: 30px;
+}
+
+.fourthwrap3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #fff; */
+    padding-top: 0px;
+}
+
+.fourthwrapper3{
+    margin: 25px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.fourthwrapper3 img{
+    height: 40vh;
+    width: 30vw;
+    object-fit: cover;
+    float: left;
+    border-radius: 10px;
+    margin-right: 15px;
+    box-shadow: 10px 10px 6px #bfbfbf;
+}
+
+.fourthwrap3 .fourthwrapper3 .fourthtextbox3{
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourthwrap3 .fourthwrapper3 .fourthtextbox3 h3{
+    display: flex;
+    height: 7vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fourthtextbox3 h3{
+    font-size: 30px;
+}
+
+/* Animals in Sri Lanka page */
+
+
+.heading{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-family: 'Kurale', serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.bullet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.point{
+    list-style-type: disc;
+    width: 78vw;
+    text-align: left;
+    padding-top: 50px;
+}
+
+.bullet ul li {
+    width: fit-content;
+}
+
+.bullet ul a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #fff; */
+    padding-top: 0px;
+}
+
+.wrapper{
+    margin: 25px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.wrapper img{
+    height: 40vh;
+    width: 30vw;
+    object-fit: cover;
+    float: right;
+    border-radius: 10px;
+    margin-left: 15px;
+    box-shadow: 10px 10px 6px #bfbfbf;
+}
+
+h3{
+    font-family: 'Kurale', serif;
+    font-size: 30px;
+}
+
+p{
+    color: #000;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-top: 10px;
+    top: 100px;
+}
+
+.wrap .wrapper .textbox1{
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
+
+.textbox1 h3{
+    font-size: 30px;
+}
+
+@media(max-width: 700px){
+
+    .wrapper img{
+        float: none;
+        width: 100%;
+        height: 300px;
+        margin-left: 0px;
+    }
+
+    .wrap .wrapper .textbox1{
+        display: block;
+        height: 100%;
+    }
+
+    .textbox1{
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .heading{
+        width: 90%;
+    }
+}
+
+
+/* @media(min-width:701px) and (max-width: 1813px){
+    .wrapper img{
+        max-width: 100%;
+        max-height: 100%;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .textbox1{
+        padding-top: 0px;
+    }
+} */
+
+
+.wrap2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #fff; */
+    padding-top: 0px;
+}
+
+.wrapper2{
+    margin: 25px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.wrapper2 img{
+    height: 40vh;
+    width: 30vw;
+    object-fit: cover;
+    float: left;
+    border-radius: 10px;
+    margin-right: 15px;
+    box-shadow: 10px 10px 6px #bfbfbf;
+}
+
+.wrap2 .wrapper2 .textbox2{
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}  
+
+.textbox2 h3{
+    font-size: 30px;
+}
+
+@media(max-width: 700px){
+    .wrapper2{
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .wrapper2 img{
+        float: none;
+        max-width: 100%;
+        width: 100%;
+        height: 300px;
+        margin-left: 0px;
+    }
+
+    .wrap2 .wrapper2 .textbox2{
+        display: block;
+        height: 100%;
+    }
+
+    .textbox2{
+        padding-top: 0px;
+        text-align: center;
+    }
+
+    .heading{
+        width: 90%;
+    }
+}
+
+
+/* @media(min-width:701px) and (max-width: 1813px){
+    .wrapper2 img{
+        max-width: 100%; */
+        /* max-height: 100vh;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+
+    .textbox2{
+        padding-top: 0px;
+    }
+} */
+
+
+
+
+/* @media(min-width:701px) and (max-width: 1813px){
+    .wrapper3 img{
+        max-width: 100%;
+        max-height: 100%;
+        height: 100%;
+        
+    }
+
+    .textbox3{
+        padding-top: 0px;
+    }
+} */
+
+.parks{
+    width: 80%;
+    margin: auto;
+    text-align: start;
+    padding-top: 100px;
+}
+
+h2{
+    font-family: 'Kurale', serif;
+}
+
+.col{
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+    column-gap: 20px;
+}
+
+.row2{
+    width: 81%;
+    column-gap: 100px;
+}
+
+.row2 img{
+    height: 50vh;
+    width: 39vw;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 10px 10px 6px #bfbfbf;
+}
+
+
+
+@media(max-width:700px){
+    .parks{
+        align-items: center;
+    }
+
+    .row2{
+        align-items: center;
+    }
+    .col{
+        width: 100%;
+        padding: 0px;
+    }
+    .row2 img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        padding: 5px;
+    }
+}
+
+
+
+

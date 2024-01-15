@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals in Sri Lanka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300;400&family=Kurale&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <nav class="header1">
+            <section class="nav-sec">
+                <a href="#"><img src="Images/Logo.png" alt="" id="logo"></a>
+            <div class="navlinks" id="Link">
+                <i class='bx bx-x' id="hide" onclick="setTimeout(hideMenu(),700)"></i>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Introduction to Sri Lankan WIldlife.html">Sri Lankan Wildlife Introduction</a></li>
+                    <li><a href="Department of wildlife conservation.html">Department of Wildlife Conservation</a></li>
+                    <li><a href="Sri Lankan leopard.html">The Sri Lankan Leopard</a></li>
+                    <li><a href="Animals in srilanka.html">Animals in Sri Lanka</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' id="show" onclick="showMenu()"></i>
+            </section>
+        </nav>
+        <!-- info -->
+        <section class="important">
+            <h1>Welcome To The Wildlife Of Sri Lanka</h1>
+            <p>One one the most beautiful places to ever exist sure to leave you astonished</p>
+        </section>
+
+        <section class="important">
+            <div class="importantrow">
+                <section class="importantcol">
+                    <img src="Images/4k img2.jpg" alt="">
+                    <h3>Endangeted animals</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid pariatur cumque laudantium unde quibusdam harum velit fugiat vitae officiis odio. Animi esse commodi possimus minima eius earum rem ex totam.</p>
+                </section>
+                <section class="importantcol">
+                    <img src="Images/4k img2.jpg" alt="">
+                    <h3>Indeginous animals</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi laudantium optio suscipit fugiat debitis velit veniam quisquam, enim aspernatur vitae perferendis dignissimos, alias officia neque ratione voluptatibus ipsa sed ipsam!</p>
+                </section>
+                <section class="importantcol">
+                    <img src="Images/4k img2.jpg" alt="">
+                    <h3>sdfasfsafasdfsdaf</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora voluptates dolor amet veniam nisi repellendus quos tempore inventore non consectetur? Culpa voluptates voluptas assumenda optio iure ipsam ut esse quia.</p>
+                </section>
+            </div>
+        </section>
+        <section class="mostvisit">
+            <h1>Most Visited Locations</h1>
+            <div class="mvrow">
+                <div class="mvcol">
+                    <img src="Images/4k img1.jpg" alt="">
+                    <div class="mvlayer">
+                        <h3>LONDON</h3>
+                    </div>
+                </div>
+                <div class="mvcol">
+                    <img src="Images/4k img1.jpg" alt="">
+                    <div class="mvlayer">
+                        <h3>NEWYORK</h3>
+                    </div>
+                </div>
+                <div class="mvcol">
+                    <img src="Images/4k img1.jpg" alt="">
+                    <div class="mvlayer">
+                        <h3>WASHINGTON</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footcon">
+            <div class="social">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footnav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sri Lankan wildlife Introduction</a></li>
+                    <li><a href="#">Department of Wildlife Conservation</a></li>
+                    <li><a href="#">The Sri Lankan Leopard</a></li>
+                    <li><a href="#">Animals in Sri Lanka</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footbot">
+            <p>Copyright &#169;2023; Designed by <span class="design">Senuka</span></p>
+        </div>
+    </footer>
+<!-- Javascript for mobile menu     -->
+    <script>
+        var Link = document.getElementById("Link")
+        var show = document.getElementById("show")
+        var hide = document.getElementById("hide")
+
+        function showMenu(){
+            Link.style.right = "0"
+        }
+
+        function hideMenu(){
+            Link.style.right = "-200px"        
+
+        }
+
+
+    </script>
+</body>
+</html>
